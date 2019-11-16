@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <p>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="submit" value="Tak">
+      <input type="submit" value="Chyba tak">
+      <input type="submit" value="Nie wiem">
+      <input type="submit" value="Chyba nie">
+      <input type="submit" value="Nie">
+
+    </form>
+  </p>
+
+  {% if result_present %}
+    <p><strong>Result:</strong>
+      <ul>
+        <li>Preason's r<br>
+            {{ results.r_table|safe }}</li>
+        <li>probability <i>p</i> < x <br>
+            {{ results.p_table|safe }}</li>
+      </ul>
+    </p>
+
+      <p>Raw data, pandas' DataFrame rendered as HTML</p>
+      <p>{{ df|safe }}</p>
+
+  {% endif %}
+
+{% endblock %}

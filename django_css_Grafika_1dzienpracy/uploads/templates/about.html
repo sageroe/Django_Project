@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1><p class="sansserif">O co chodzi?</p></h1>
+
+    <p class="sansserif">ŻEBY SIĘ DOBRZE BAWIĆ OŁ JEE</p>
+
+
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+          float: left;
+          padding: 10px;
+
+        }
+
+        .left {
+          width: 60%;
+        }
+
+        .right {
+          width: 40%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        </head>
+        <body>
+
+        <div class="row">
+          <div class="column left">
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+          </div>
+          <div class="column right" >
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            img:hover {
+              -webkit-filter: scaleX(-1) drop-shadow(8777px 8777px 10px purple);
+              transform: scaleX(-1);
+              filter: drop-shadow(0px 0px 5px white);
+            }
+            img{
+              filter: drop-shadow(0px 0px 5px white);
+              position: fixed;
+              right: 50px;
+              bottom: 50px;
+            }
+
+            </style>
+
+
+            <img src="/static/img/lampa.png" alt="Akinatordzin" width="500" height="250">
+          </div>
+        </div>
+
+        </body>
+        </html>
+{% endblock %}
