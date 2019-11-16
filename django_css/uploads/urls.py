@@ -9,4 +9,5 @@ urlpatterns = [
     url('data_analysis/', views.data_analysis, name='data_analysis'),
     url('about/', views.about, name='about'),
     url('contact/', views.contact, name='contact'),
+    url('akinator/', views.akinator, name ='akinator'),
 ]
